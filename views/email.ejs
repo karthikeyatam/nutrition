@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="email.css" rel="stylesheet">
+</head>
+<body>
+    <div class="emailform">
+        <h2>send your queries</h2>
+    <form action="/email" method="POST">
+        <input type="email" name="mail_sender" placeholder="enter yout email" class="email_info"><br>
+        <br>
+        <input type="text" name="info" placeholder="Enter the text" class="email_info"><br>
+        <br>
+        <button type="submit">Send</button> 
+        <br>   
+    </form>
+    <%= locals.data %>
+    </div>
+</body>
+</html>
