@@ -19,7 +19,7 @@ app.get('/',(req,res)=>{
 app.post('/',(req,res)=>{
   const food_item=req.body.food
   //API FROM RAPIDAPI NUTRITION BY API NINJAS
-  const proxy = 'http://172.16.199.20:8080';
+  const proxy = 'http://172.16.2.11:3128';
   const url = 'https://nutrition-by-api-ninjas.p.rapidapi.com/v1/nutrition';
   const options = {
     method: 'GET',
@@ -63,7 +63,7 @@ app.post('/email',(req,res)=>{
       user: process.env.USER,
       pass: process.env.PASSKEY_MAIL
     },
-    proxy:'http://172.16.199.20:8080'
+    proxy:'http://172.16.2.11:3128'
   });
 
   const mailOptions ={
